@@ -12,10 +12,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import static com.example.demo.enums.InitName.TOKEN;
+
 @RestController
 @RequestMapping("/index")
 public class LoginController {
-    private final String TOKEN = "cherry";
+
     @Autowired
     private LoginService loginService;
     @GetMapping()
